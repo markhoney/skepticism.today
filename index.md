@@ -1,37 +1,15 @@
-## Welcome to GitHub Pages
+Skepticism Today is an hour long monthly skeptical podcast created by Dell Mitchell, Mark Honeychurch, Simon McAuliffe and Tim Atkin. We talk about recent news and events of interest to skeptics - both NZ based and international.
 
-You can use the [editor on GitHub](https://github.com/markhoney/skepticism.today/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+Regular podcast segments are:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+- News - items mostly, but not exclusively, from New Zealand
+- Pick your Horoscope - a quiz to figure out which horoscope matches which host
+- The Scientific Method - a primer on one aspect of the scientific method
+- Religion in 60 seconds - an overview of a religion, never as short as 60 seconds
+- Mis Media - a critical examination of bad science reporting in the media
+- Where the Hell - one news story, three possible countries. We try to figure out where the story came from
+- Kiwi Scientist - a short biography of a New Zealand scientist
+- Calendar - a mixture of science and woo events happening in New Zealand over the ensuing month
+- Dumb Quote - a really stupid thing that someone of interest to skeptics said recently
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/markhoney/skepticism.today/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Additionally there will be Interviews as often as we can arrange them.
