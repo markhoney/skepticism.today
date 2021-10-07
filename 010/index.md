@@ -3,6 +3,11 @@ layout: post
 categories: podcast
 title: Episode 010 - The Quantum Trailblazer
 date: 2014-04-12
+episode: 010
+episodeType: full
+explicit: false
+audio: https://archive.org/download/skepticism-today/SkepticismToday010.mp3
+length: 5033
 ---
 
 ## News.

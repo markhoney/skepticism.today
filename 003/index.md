@@ -3,6 +3,11 @@ layout: post
 categories: podcast
 title: Episode 003 - The 21 Second Pee
 date: 2014-07-13
+episode: 003
+episodeType: full
+explicit: false
+audio: https://archive.org/download/skepticism-today/SkepticismToday003.mp3
+length: 3805
 ---
 
 ## News.

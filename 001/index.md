@@ -3,6 +3,11 @@ layout: post
 categories: podcast
 title: Episode 001 - UFO Sighting, Horse Dowsing & Junkie Sheep
 date: 2014-05-25
+episode: 001
+episodeType: full
+explicit: false
+audio: https://archive.org/download/skepticism-today/SkepticismToday001.mp3
+length: 3980
 ---
 
 ## News.

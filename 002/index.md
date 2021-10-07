@@ -3,6 +3,11 @@ layout: post
 categories: podcast
 title: Episode 002 - Turing, Helmets & Tunnels
 date: 2014-06-15
+episode: 002
+episodeType: full
+explicit: false
+audio: https://archive.org/download/skepticism-today/SkepticismToday002.mp3
+length: 3908
 ---
 
 ## News.

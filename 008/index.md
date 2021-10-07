@@ -3,6 +3,11 @@ layout: post
 categories: podcast
 title: Episode 008 - Those damn Sea Lions!
 date: 2015-01-10
+episode: 008
+episodeType: full
+explicit: false
+audio: https://archive.org/download/skepticism-today/SkepticismToday008.mp3
+length: 3477
 ---
 
 ## News.

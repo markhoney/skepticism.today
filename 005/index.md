@@ -3,6 +3,11 @@ layout: post
 categories: podcast
 title: Episode 005 - Do Chemtrails Create Zombies?
 date: 2014-09-28
+episode: 005
+episodeType: full
+explicit: false
+audio: https://archive.org/download/skepticism-today/SkepticismToday005.mp3
+length: 6039
 ---
 
 ## News.

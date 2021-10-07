@@ -3,6 +3,11 @@ layout: post
 categories: podcast
 title: Episode 007 - Fried Chicken, Anyone?
 date: 2014-12-20
+episode: 007
+episodeType: full
+explicit: false
+audio: https://archive.org/download/skepticism-today/SkepticismToday007.mp3
+length: 2838
 ---
 
 Recorded Saturday, 20 December 2014.

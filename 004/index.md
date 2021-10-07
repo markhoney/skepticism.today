@@ -3,6 +3,11 @@ layout: post
 categories: podcast
 title: Episode 004 - You Can't Measure it in the Same Way
 date: 2014-08-22
+episode: 004
+episodeType: full
+explicit: false
+audio: https://archive.org/download/skepticism-today/SkepticismToday004.mp3
+length: 3339
 ---
 
 ## Updates.

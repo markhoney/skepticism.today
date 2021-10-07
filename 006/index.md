@@ -3,6 +3,11 @@ layout: post
 categories: podcast
 title: Episode 006 - Are dogs good drivers?
 date: 2014-11-16
+episode: 006
+episodeType: full
+explicit: false
+audio: https://archive.org/download/skepticism-today/SkepticismToday006.mp3
+length: 3291
 ---
 
 ## News.
