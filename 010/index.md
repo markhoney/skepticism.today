@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: podcast
+categories: episode
 title: Episode 010 - The Quantum Trailblazer
 date: 2014-04-12
 episode: 010

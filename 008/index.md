@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: podcast
+categories: episode
 title: Episode 008 - Those damn Sea Lions!
 date: 2015-01-10
 episode: 008

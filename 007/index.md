@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: podcast
+categories: episode
 title: Episode 007 - Fried Chicken, Anyone?
 date: 2014-12-20
 episode: 007

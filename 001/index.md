@@ -1,6 +1,6 @@
 ---
 layout: post
-categories: podcast
+categories: episode
 title: Episode 001 - UFO Sighting, Horse Dowsing & Junkie Sheep
 date: 2014-05-25
 episode: 001
