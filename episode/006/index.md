@@ -1,5 +1,6 @@
 ---
 layout: post
+categories: podcast
 title: Episode 006 - Are dogs good drivers?
 date: 2014-11-16
 ---

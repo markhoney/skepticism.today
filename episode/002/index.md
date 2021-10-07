@@ -1,5 +1,6 @@
 ---
 layout: post
+categories: podcast
 title: Episode 002 - Turing, Helmets & Tunnels
 date: 2014-06-15
 ---

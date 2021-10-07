@@ -1,5 +1,6 @@
 ---
 layout: post
+categories: podcast
 title: Episode 003 - The 21 Second Pee
 date: 2014-07-13
 ---

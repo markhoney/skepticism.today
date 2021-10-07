@@ -1,5 +1,6 @@
 ---
 layout: post
+categories: podcast
 title: The CUSP Today 001 - NZ Skeptics Conference 2015
 date: 2015-11-30
 ---

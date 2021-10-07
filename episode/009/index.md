@@ -1,5 +1,6 @@
 ---
 layout: post
+categories: podcast
 title: Episode 009 - Fancy a Spanking? (The explicit episode)
 date: 2014-02-22
 ---
