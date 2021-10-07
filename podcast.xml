@@ -24,7 +24,7 @@ layout: null
         <itunes:explicit>{{ site.podcast.explicit }}</itunes:explicit>
         <itunes:complete>{{ site.podcast.complete }}</itunes:complete>
         <itunes:block>{{ site.podcast.block }}</itunes:block>
-        {% for post in site.categories.podcast %}
+        {% for post in site.categories.episode %}
         <item>
             <title>{{ post.title }}</title>
             <itunes:author>{{ post.author }}</itunes:author>
