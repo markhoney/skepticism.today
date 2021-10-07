@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Episode 001 - The Cusp Today
+title: The CUSP Today 001 - NZ Skeptics Conference 2015
 date: 2015-11-30
 ---
 

@@ -2,3 +2,16 @@
 remote_theme: chrisrhymes/bulma-clean-theme
 timezone: Pacific/Auckland
 google_analytics: UA-51344487-1
+podcast_url: http://skepticism.today
+podcast_album_art: /assets/Logo-iTunes.png
+podcast_title: Skepticism Today
+podcast_owner: Mark Honeychurch
+podcast_email: mark@honeychurch.org
+podcast_category: Skepticism
+podcast_subcategory_one: Science
+podcast_subcategory_two: Critical Thinking
+podcast_explicit: "no"
+podcast_author: Mark Honeychurch
+podcast_description: A topical skeptical podcast from New Zealand.
+podcast_summary: Skepticism Today is an hour long monthly skeptical podcast created by Dell Mitchell, Mark Honeychurch, Simon McAuliffe and Tim Atkin.
+podcast_subtitle: Skeptical. Critical. Topical.

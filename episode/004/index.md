@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Episode 004
+title: Episode 004 - You Can't Measure it in the Same Way
 date: 2014-08-22
 ---
 

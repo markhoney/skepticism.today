@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Episode 009
+title: Episode 009 - Fancy a Spanking? (The explicit episode)
 date: 2014-02-22
 ---
 

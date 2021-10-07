@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Episode 007
+title: Episode 007 - Fried Chicken, Anyone?
 date: 2014-12-20
 ---
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Episode 010
+title: Episode 010 - The Quantum Trailblazer
 date: 2014-04-12
 ---
 

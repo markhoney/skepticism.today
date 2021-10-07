@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Episode 005
+title: Episode 005 - Do Chemtrails Create Zombies?
 date: 2014-09-28
 ---
 

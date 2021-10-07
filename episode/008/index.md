@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Episode 00 - 
+title: Episode 008 - Those damn Sea Lions!
 date: 2015-01-10
 ---
 
