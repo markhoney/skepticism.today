@@ -1,2 +1,4 @@
-theme: jekyll-theme-cayman
+#theme: jekyll-theme-cayman
+remote_theme: chrisrhymes/bulma-clean-theme
 timezone: Pacific/Auckland
+google_analytics: UA-51344487-1
