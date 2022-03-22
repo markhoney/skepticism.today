@@ -1,0 +1,25 @@
+<footer class="footer mt-auto py-3 bg-dark text-white h-card">
+	<!--<data class="u-url" href="{{ "/" | relative_url }}"></data>-->
+	<div class="container py-3">
+		<div class="row">
+			<div class="col">
+				<p class="feed-subscribe">
+					<a class="btn btn-orange text-white" href="{{ 'subscribe' | relative_url }}">
+						<i class="bi bi-rss-fill"></i>
+						<span>Subscribe</span>
+					</a>
+				</p>
+			</div>
+			<div class="col">
+				<p>Copyright © 2011 {{ site.title }}</p>
+			</div>
+		</div>
+		{%- if site.bootstrap.social_links -%}
+		<div class="row py-3">
+			<div class="col">
+				{%- include social.html -%}
+			</div>
+		</div>
+		{%- endif -%}
+	</div>
+</footer>

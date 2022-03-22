@@ -1,75 +1,44 @@
 ---
+title: Feed
 layout: null
+info: https://help.apple.com/itc/podcasts_connect/
 ---
-<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
-xmlns:content="http://purl.org/rss/1.0/modules/content/"
-xmlns:wfw="http://wellformedweb.org/CommentAPI/"
-xmlns:dc="http://purl.org/dc/elements/1.1/"
-xmlns:atom="http://www.w3.org/2005/Atom"
-xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
-xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
-xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
-xmlns:rawvoice="http://www.rawvoice.com/rawvoiceRssModule/"
->
 
-<channel>
-<title>{{ site.podcast.title }}</title>
-<atom:link href="{{ site.url }}/feed/podcast" rel="self" type="application/rss+xml" />
-<link>{{ site.url }}</link>
-<description>{{ site.podcast.description }}</description>
-<lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
-<language>en-US</language>
-<sy:updatePeriod>hourly</sy:updatePeriod>
-<sy:updateFrequency>1</sy:updateFrequency>
-<generator>http://jekyllrb.com</generator>
-<itunes:summary>{{ site.podcast.summary }}</itunes:summary>
-<itunes:author>{{ site.podcast.author }}</itunes:author>
-<itunes:explicit>{{ site.podcast.explicit }}</itunes:explicit>
-<itunes:image href="{{ site.url }}{{ site.podcast.album_art }}" />
-<itunes:owner>
-<itunes:name>{{ site.podcast.owner }}</itunes:name>
-<itunes:email>{{ site.podcast.email }}</itunes:email>
-</itunes:owner>
-<managingEditor>{{ site.podcast.email }} ({{ site.podcast.owner }})</managingEditor>
-<itunes:subtitle>{{ site.podcast.subtitle }}</itunes:subtitle>
-<image>
-<title>{{ site.podcast.title }}</title>
-<url>{{ site.url }}{{ site.podcast.album_art }}</url>
-<link>{{ site.url }}</link>
-</image>
-<itunes:category text="{{ site.podcast.category }}">
-<itunes:category text="{{ site.podcast.subcategory_one }}" />
-<itunes:category text="{{ site.podcast.subcategory_two }}" />
-</itunes:category>
-{% for episode in site.categories.episode %}
-  <item>
-    <title>{{ episode.title }}</title>
-    <link>{{ site.url }}{{ episode.url }}</link>
-    <comments>{{ site.url }}{{ episode.url }}#comments</comments>
-    <pubDate>{{ episode.date | date: "%a, %d %b %Y %T %z" }}</pubDate>
-    <dc:creator><![CDATA[{{ site.author | cdata_escape }}]]></dc:creator>
-{% for category in episode.categories %}
-    <category><![CDATA[{{ category | cdata_escape }}]]></category>
-{% endfor %}
-{% for category in episode.tags %}
-    <category><![CDATA[{{ category | cdata_escape }}]]></category>
-{% endfor %}
-    <guid isPermaLink="{% if episode.guid %}false{% else %}true{% endif %}">{{ site.url }}{% if episode.guid %}/{{ episode.guid }}{% else %}{{ episode.url }}{% endif %}</guid>
-    <description>
-        <![CDATA[{{ episode.excerpt | strip_html | truncatewords: 50 | expand_urls: site.url | cdata_escape }}]]>
-    </description>
-    <content:encoded>
-        <![CDATA[{{ episode.content | expand_urls: site.url | cdata_escape }}]]>
-    </content:encoded>
-
-    <enclosure url="{{ episode.link }}" length="{{ episode.length }}" type="audio/mpeg" />
-    <itunes:subtitle><![CDATA[{{ episode.excerpt | strip_html | truncatewords: 50 | expand_urls: site.url | cdata_escape }}]]></itunes:subtitle>
-    <itunes:summary><![CDATA[{{ episode.content | expand_urls: site.url | cdata_escape }}]]></itunes:summary>
-    <itunes:author>{{ site.podcast.author }}</itunes:author>
-    <itunes:image href="{{ site.url }}{{ site.podcast.album_art }}" />
-    <itunes:explicit>{{ site.explicit }}</itunes:explicit>
-    <itunes:duration>{{ episode.duration }}</itunes:duration>
-  </item>
-{% endfor %}
-</channel>
+{%- assign host = site.hosts | where: 'name', 'Mark Honeychurch' | first-%}
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<title>{{ site.title }}</title>
+		<description>{{ site.description }}</description>
+		<itunes:image href="{{ site.logo | relative_url }}"/>
+		<language>en</language>
+		<itunes:category text="News">
+			<itunes:category text="News Commentary"/>
+		</itunes:category>
+		<itunes:explicit>false</itunes:explicit>
+		<itunes:author>{% for host in site.hosts %}{{host.name}}{% unless forloop.last %}, {% endunless %}{% endfor %}</itunes:author>
+		<link>{{ '/' | relative_url }}</link>
+		<itunes:owner>
+			<itunes:name>{{ host.name }}</itunes:name>
+			<itunes:email>{{ host.email }}</itunes:email>
+		</itunes:owner>
+		<itunes:type>episodic</itunes:type>
+		<copyright>Copyright © {{host.name}}</copyright>
+		{% for episode in site.posts %}
+		{%- assign audio = site.data.dabbling-in-dogmas.files | where: 'track', episode.episode | first-%}
+		<item>
+			<title>{{ episode.title }}</title>
+			<enclosure url="{{ audio.name | prepend: 'https://archive.org/download/dabbling-in-dogmas/' }}" length="{{ audio.size | xml_escape }}" type="audio/mpeg"/>
+			<pubDate>{{ episode.date | date_to_rfc822 }}</pubDate>
+			<description>{{ episode.content | xml_escape | strip_newlines }}</description>
+			<itunes:duration>{{ audio.length | xml_escape }}</itunes:duration>
+			<link>{{ episode.url | relative_url }}</link>
+			<itunes:image>{% if episode.image %}{{ episode.image | relative_url }}{% else %}{{ episode.episode | prepend: '/assets/img/episodes/' | append: '.jpg' | relative_url }}{% endif %}</itunes:image>
+			<itunes:explicit>{% if episode.explicit %}true{% else %}false{% endif %}</itunes:explicit>
+			<itunes:episode>{{ episode.episode }}</itunes:episode>
+			<itunes:episodeType>{% if episode.type %}{{ episode.type }}{% else %}full{% endif %}</itunes:episodeType>
+			{% if episode.block %}<itunes:block>Yes</itunes:block>{% endif %}
+		</item>
+		{% endfor %}
+	</channel>
 </rss>
