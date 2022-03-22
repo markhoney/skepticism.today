@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+<div class="home">
+	<!--{%- if page.title -%}
+		<h1 class="page-heading py-3">{{ page.title }}</h1>
+	{%- endif -%}-->
+
+	{{ content }}
+
+	<h2>Our Latest Episode</h2>
+	{% assign episode = site.posts.first %}
+	{%- include episode_card.html -%}
+
+	<h2>Previous Episodes</h2>
+	<div class="container">
+		<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+			{%- for episode in site.posts offset:1 limit:12 -%}
+				<div class="col">
+					{%- include episode_card.html -%}
+				</div>
+			{%- endfor -%}
+		</div>
+	</div>
+
+</div>

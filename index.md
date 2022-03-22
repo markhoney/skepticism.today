@@ -6,7 +6,7 @@ Regular podcast segments are:
 - Pick your Horoscope - a quiz to figure out which horoscope matches which host
 - The Scientific Method - a primer on one aspect of the scientific method
 - Religion in 60 seconds - an overview of a religion, never as short as 60 seconds
-- Mis Media - a critical examination of bad science reporting in the media
+- Miss Media - a critical examination of bad science reporting in the media
 - Where the Hell - one news story, three possible countries. We try to figure out where the story came from
 - Kiwi Scientist - a short biography of a New Zealand scientist
 - Calendar - a mixture of science and woo events happening in New Zealand over the ensuing month
