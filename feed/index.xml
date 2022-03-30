@@ -24,7 +24,7 @@ info: https://help.apple.com/itc/podcasts_connect/
 		<itunes:type>episodic</itunes:type>
 		<copyright>Copyright © Mark Honeychurch</copyright>
 		{% for episode in site.posts %}
-		{%- assign audio = site.data.dabbling-in-dogmas.files | where: 'track', episode.episode | first-%}
+		{%- assign audio = site.data[site.archive].files | where: 'track', episode.episode | first-%}
 		<item>
 			<title>{{ episode.title }}</title>
 			<enclosure url="{{ 'https://archive.org/download/' | append: site.archive | append: '/' | append: audio.name }}" length="{{ audio.size | xml_escape }}" type="audio/mpeg"/>
