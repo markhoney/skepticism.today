@@ -9,14 +9,14 @@ info: https://help.apple.com/itc/podcasts_connect/
 	<channel>
 		<title>{{ site.title }}</title>
 		<description>{{ site.description }}</description>
-		<itunes:image href="{{ site.logo | relative_url }}"/>
+		<itunes:image href="{{ site.logo | absolute_url }}"/>
 		<language>en</language>
 		<itunes:category text="Religion &amp; Spirituality">
 			<itunes:category text="Religion"/>
 		</itunes:category>
 		<itunes:explicit>false</itunes:explicit>
 		<itunes:author>Mark Honeychurch, Dell Mitchell, Simon McAuliffe, Lisa Taylor, Tim Atkin</itunes:author>
-		<link>{{ '/' | relative_url }}</link>
+		<link>{{ '/' | absolute_url }}</link>
 		<itunes:owner>
 			<itunes:name>Mark Honeychurch</itunes:name>
 			<itunes:email>mark@honeychurch.org</itunes:email>
@@ -31,8 +31,8 @@ info: https://help.apple.com/itc/podcasts_connect/
 			<pubDate>{{ episode.date | date_to_rfc822 }}</pubDate>
 			<description>{{ episode.content | xml_escape | strip_newlines }}</description>
 			<itunes:duration>{{ audio.length | xml_escape }}</itunes:duration>
-			<link>{{ episode.url | relative_url }}</link>
-			<itunes:image>{% if episode.image %}{{ episode.image | relative_url }}{% else %}{{ '/assets/images/episodes/SkepticismToday' | append: episode.episode | append: '.jpg' | relative_url }}{% endif %}</itunes:image>
+			<link>{{ episode.url | absolute_url }}</link>
+			<itunes:image>{% if episode.image %}{{ episode.image | absolute_url }}{% else %}{{ '/assets/images/episodes/SkepticismToday' | append: episode.episode | append: '.jpg' | absolute_url }}{% endif %}</itunes:image>
 			<itunes:explicit>{% if episode.explicit %}true{% else %}false{% endif %}</itunes:explicit>
 			<itunes:episode>{{ episode.episode }}</itunes:episode>
 			<itunes:episodeType>{% if episode.type %}{{ episode.type }}{% else %}full{% endif %}</itunes:episodeType>
