@@ -14,17 +14,3 @@ google:
   analytics: G-Q9S8F62XT2
 permalink: /:title
 archive: skepticism-today
-podcast:
-  title: Skepticism Today
-  owner: Mark Honeychurch
-  email: mark@honeychurch.org
-  url: https://skepticism.today
-  album_art: /assets/Logo-iTunes.png
-  category: Skepticism
-  subcategory_one: Science
-  subcategory_two: Critical Thinking
-  explicit: false
-  author: Mark Honeychurch
-  description:
-  summary: .
-  subtitle:
