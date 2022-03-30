@@ -4,7 +4,6 @@ layout: null
 info: https://help.apple.com/itc/podcasts_connect/
 ---
 
-{%- assign host = site.hosts | where: 'name', 'Mark Honeychurch' | first-%}
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
 	<channel>
@@ -16,14 +15,14 @@ info: https://help.apple.com/itc/podcasts_connect/
 			<itunes:category text="Religion"/>
 		</itunes:category>
 		<itunes:explicit>false</itunes:explicit>
-		<itunes:author>{% for host in site.hosts %}{{host.name}}{% unless forloop.last %}, {% endunless %}{% endfor %}</itunes:author>
+		<itunes:author>Mark Honeychurch, Dell Mitchell, Simon McAuliffe, Lisa Taylor, Tim Atkin</itunes:author>
 		<link>{{ '/' | relative_url }}</link>
 		<itunes:owner>
-			<itunes:name>{{ host.name }}</itunes:name>
-			<itunes:email>{{ host.email }}</itunes:email>
+			<itunes:name>Mark Honeychurch</itunes:name>
+			<itunes:email>mark@honeychurch.org</itunes:email>
 		</itunes:owner>
 		<itunes:type>episodic</itunes:type>
-		<copyright>Copyright © {{host.name}}</copyright>
+		<copyright>Copyright © Mark Honeychurch</copyright>
 		{% for episode in site.posts %}
 		{%- assign audio = site.data.dabbling-in-dogmas.files | where: 'track', episode.episode | first-%}
 		<item>
