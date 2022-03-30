@@ -33,7 +33,7 @@ layout: default
 	{%- assign url = 'https://archive.org/download/' | append: site.archive | append: '/' | append: audio.name -%}
 	{%- include audio_player.html url=url -%}
 
-	<images alt="" class="images-thumbnail rounded float-lg-end shadow" style="max-height: 40vh" src="{% if page.image %}{{ page.image | relative_url }}{% else %}{{ '/assets/images/episodes/SkepticismToday' | append: page.episode | append: '.jpg' | relative_url }}{% endif %}">
+	<img alt="" class="images-thumbnail rounded float-lg-end shadow" style="max-height: 40vh" src="{% if page.image %}{{ page.image | relative_url }}{% else %}{{ '/assets/images/episodes/SkepticismToday' | append: page.episode | append: '.jpg' | relative_url }}{% endif %}">
 
 	<a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
