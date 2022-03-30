@@ -11,8 +11,8 @@ info: https://help.apple.com/itc/podcasts_connect/
 		<description>{{ site.description }}</description>
 		<itunes:image href="{{ site.logo | absolute_url }}"/>
 		<language>en</language>
-		<itunes:category text="Religion &amp; Spirituality">
-			<itunes:category text="Religion"/>
+		<itunes:category text="News">
+			<itunes:category text="News Commentary"/>
 		</itunes:category>
 		<itunes:explicit>false</itunes:explicit>
 		<itunes:author>Mark Honeychurch, Dell Mitchell, Simon McAuliffe, Lisa Taylor, Tim Atkin</itunes:author>
