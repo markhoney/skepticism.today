@@ -1,8 +1,6 @@
 {%- assign audio = site.data[site.archive].files | where: 'track', episode.episode | first-%}
 <div
 	class="card shadow overflow-hidden"
-	onMouseOver="this.getElementsByTagName('images')[0].style.transform='scale(1.02)'"
-	onMouseOut="this.getElementsByTagName('images')[0].style.transform='scale(1)'"
 >
 	<img
 		class="card-images-top w-100"
@@ -14,7 +12,7 @@
 	<div class="card-body">
 		<h3 class="card-title">{{ episode.title }}</h3>
 		<h4 style="font-size: 1.1em">{{ episode.date | date_to_long_string }}</h4>
-		<div class="card-text">{{ episode.excerpt }}</div>
+		<!--<div class="card-text">{{ episode.excerpt }}</div>-->
 		<a href="{{ episode.url | relative_url }}" class="btn btn-primary stretched-link float-end">Listen</a>
 	</div>
 </div>
